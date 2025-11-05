@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Recap of Memories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:#eadfcc;
+  color:#4b2e19;
+  font-family:'Dancing Script', cursive;
+  overflow-x:hidden;
+}
+
+/* Password Screen */
+#passwordScreen{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:#4b2e19;color:#f8f0e6;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:2000;text-align:center;
+}
+#passwordInput{padding:12px;margin-top:20px;font-size:1.2rem;border-radius:5px;border:none;}
+#passwordButton{padding:10px 25px;margin-top:10px;font-size:1.2rem;background:#f8f0e6;color:#4b2e19;border:none;border-radius:5px;cursor:pointer;}
+
+/* Loading Screens */
+.loadingScreen{
+  position:fixed;inset:0;display:none;
+  background:#4b2e19;color:#f8f0e6;
+  align-items:center;justify-content:center;
+  font-size:1.6rem;z-index:1500;
+}
+
+/* Slides */
+.slide{display:none;padding:50px 18px;}
+.slide.active{display:block;}
+
+/* Title */
+h1{text-align:center;font-size:3rem;margin-bottom:40px;font-weight:700;}
+
+/* Frames */
+.frame{
+  border:6px solid #4b2e19;
+  background:#fffaf0;
+  padding:10px;
+  margin:35px auto;
+  max-width:650px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.25);
+}
+.frame img{width:100%;display:block;}
+
+/* Text Paragraphs */
+.text-para{
+  font-size:1.6rem;
+  font-weight:bold;
+  text-align:center;
+  line-height:1.6;
+  margin:25px 0 55px;
+}
+
+/* Button */
+.btn{
+  display:block;margin:45px auto;padding:12px 28px;
+  background:#4b2e19;color:#fffaf0;border:none;
+  font-size:1.4rem;border-radius:6px;cursor:pointer;
+}
+
+/* C2 Collage (Tilted Polaroids) */
+.collage{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin:40px 0;
+}
+.collage img{
+  width:165px;height:auto;border:5px solid #4b2e19;background:#fff;
+  box-shadow:0 4px 8px rgba(0,0,0,0.3);
+  transform:rotate(var(--r));
+}
+.collage img:nth-child(1){--r:-4deg;}
+.collage img:nth-child(2){--r:3deg;}
+.collage img:nth-child(3){--r:-2deg;}
+.collage img:nth-child(4){--r:5deg;}
+.collage img:nth-child(5){--r:-6deg;}
+
+/* Music Button */
+#bgmButton{
+  position:fixed;bottom:20px;right:20px;
+  background:#4b2e19;color:#fffaf0;border:none;
+  padding:10px 18px;border-radius:6px;cursor:pointer;z-index:3000;
+}
+
+/* Sparkles */
+.sparkle{
+  position:fixed;width:5px;height:5px;background:#fff;border-radius:50%;
+  animation:float 4s linear infinite;pointer-events:none;
+}
+@keyframes float{
+  0%{opacity:0;transform:translateY(0)scale(1);}
+  50%{opacity:1;}
+ 100%{opacity:0;transform:translateY(-200px)scale(.5);}
+}
+</style>
+</head>
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="passwordScreen">
+  <div>Enter Password</div>
+  <input type="password" id="passwordInput" placeholder="Password">
+  <button id="passwordButton">Unlock</button>
+</div>
+
+<div id="loading1" class="loadingScreen">loading memories...</div>
+<div id="loading2" class="loadingScreen">loading to something which started it all...</div>
+
+<!-- MUSIC -->
+<button id="bgmButton">Play Music</button>
+<audio id="bgmAudio" loop><source src="piano1.mp3" type="audio/mp3"></audio>
+
+<!-- SLIDE 1 -->
+<div id="slide1" class="slide">
+
+<h1>Recap of Memories</h1>
+
+<div class="frame"><img src="IMG_1.jpg"></div>
+<div class="text-para">
+This is where everything began for us, I legit never ever imagined in my whole life that I'll get my life partner like this. This can be a normal screenshot but this holds so  much for me i could never explain. There you were trying to flirt and innocent me thinking you liked the picture that why you replied :), Little did I even knew you were the one, and the next moment as soon as you said that i thought wow what a coincidence you replied to exact same picture where you stay 🤣 (you do not lol) :(, but one thing I thought malad was so close to me but after meeting you it felt so far and then when I got to know you live nagpur. I was like wtf so much more distance was this distance short god ? 😭. I'm glad everything happened so weirdly but so purely 
+</div>
+
+<div class="frame"><img src="IMG_2.jpg"></div>
+<div class="text-para">
+This was the first every I miss you, I had got from you which kept giving me butterflies again and again when I don't even knew how butterflies felt and legit after seeing this I just couldn't sleep for so many nights i always keep opening the picture again and again and take it inside my tshirt close to my heart and sleep 😭. Yes I was this much stupid, you where not the only one, I wish I could've just break to screen and went direct to you and hug you there. ( And that's also the picture where I started to be a Boobie paglu not like in a lust way but just wanted to hug and sleep 😭 ) ( oye only I get to suck my milk. ) (⁠灬⁠º⁠‿⁠º⁠灬⁠)⁠♡ hehe.
+</div>
+
+<div class="frame"><img src="IMG_3.jpg"></div>
+<div class="text-para">
+This is our pfp when we meet 😭. My hairs felt like it's a nest for birds ( it still sometime does tho ). And I remember you said me when I didn't replied to your beautiful with a heart you thought how can he ignore me there is me on my pfp theek thak toh dikhti he hu 😡🤣 I laughed so hard. 😭🤣. It was bruh what maine toh compitition dene ke liye req kara tha pfp thori dekha 😭🤣. ( Hehe I can say that I fell for my rival (⁠灬⁠º⁠‿⁠º⁠灬⁠)⁠♡ ). I love you so much.
+</div>
+
+<div class="frame"><img src="IMG_4.jpg"></div>
+<div class="text-para">
+This was a random pic of myself which I cropped till my eyes and I sent you. And trust me baby before this I never thought of my eyes i always felt that normal he toh hai kya he khas hai. And then you came and presented it like how special and good it is. You made me love my so many insecurities, and I'll always be thankful to you for those things just like my high voice and sm more things. I never loved my high voice people used to say mai bass chillata but you said it is good. You saw the potential which I could never ever see in myself. I just love you so much. You let me open myself whole to you. You let me share myself whole to you. And you accepted it even after so many things. I'm grateful I really am.
+</div>
+
+<div class="frame"><img src="IMG_5.jpg"></div>
+<div class="text-para">
+Remember this ? 🤣. You sent me this while telling about how you creepa made you drank alcohol for the first time and this is how you reacted, 😭🤣 tum sab kuch nikal rahe the nashe mei 😭. And then I sent my ajeeb face with that charcoal mask 😭. Dono naseedi lag rahe the 🤣. I LOVE THIS WEIRD THING SO MUCH 😭 AND IS SO CLOSE TO MY HEART. Our every moment we spent with each other is so close to my heart.
+</div>
+
+<div class="collage">
+  <img src="IMG_6.jpg">
+  <img src="IMG_7.jpg">
+  <img src="IMG_8.jpg">
+  <img src="IMG_9.jpg">
+  <img src="IMG_10.jpg">
+</div>
+
+<div class="text-para">
+And so many more things like this always you have send me I've held them to close to my heart so close to feelings. They mean so much me those pure emotions while writing, those pure feelings while making it, those efforts of making those things. I love them so more. ( I LOVE YOU MORE THO 🤭)
+
+THANK YOU KARTAVYA. THANK YOU FOR EVERYTHING. THANK YOU FOR LOVING ME. THERE SO MANY MORE THINGS I WANNA SPEAK ABOUT THIS THINGS WILL NEVER END AND SO NOT MY LOVE FOR YOU.
+</div>
+
+<button class="btn" id="toSlide2Btn">this will lead you to the next present so click here</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div id="slide2" class="slide">
+
+<h1>The Songs You Fell For</h1>
+
+<div class="frame"><audio controls src="audio1.mp3"></audio></div>
+<div class="frame"><audio controls src="audio2.mp3"></audio></div>
+<div class="frame"><audio controls src="audio3.mp3"></audio></div>
+
+<div class="text-para">
+I crazy weird and at the same time how silly it is that I was competing with those song with you and you were falling in love 
+</div>
+
+<button class="btn" id="finalBtn">clicking here will lead you to the next present</button>
+</div>
+
+<script>
+function sparkle(){
+  const s=document.createElement("div");
+  s.classList.add("sparkle");
+  s.style.left=Math.random()*100+"%";
+  s.style.top=Math.random()*100+"%";
+  document.body.appendChild(s);
+  setTimeout(()=>s.remove(),4000);
+}
+setInterval(sparkle,400);
+
+document.getElementById("passwordButton").onclick=function(){
+  if(document.getElementById("passwordInput").value==="everymomentwasalive"){
+    document.getElementById("passwordScreen").style.display="none";
+    document.getElementById("loading1").style.display="flex";
+    setTimeout(()=>{
+      document.getElementById("loading1").style.display="none";
+      document.getElementById("slide1").classList.add("active");
+    },2000)
+  }else alert("incorrect");
+};
+
+document.getElementById("toSlide2Btn").onclick=function(){
+  document.getElementById("loading2").style.display="flex";
+  setTimeout(()=>{
+    document.getElementById("loading2").style.display="none";
+    document.getElementById("slide1").classList.remove("active");
+    document.getElementById("slide2").classList.add("active");
+  },2000)
+};
+
+document.getElementById("finalBtn").onclick=function(){
+  window.location.href="https://prantick337-ux.github.io/birthday---aniversary/";
+};
+
+let play=false;
+document.getElementById("bgmButton").onclick=function(){
+  let a=document.getElementById("bgmAudio");
+  if(!play){a.play();this.textContent="Pause Music";play=true;}
+  else{a.pause();this.textContent="Play Music";play=false;}
+};
+</script>
+
+</body>
+  </html>
